@@ -6,9 +6,6 @@ const checkIn = async (cookie) => {
         url: 'https://ikuuu.co/user/checkin',
         headers: {
             'Cookie': cookie
-        },
-        data: {
-            token: "ikuuu_network"
         }
     });
 };
@@ -45,7 +42,7 @@ const pushplus = (token, infos) => {
 
 const ikuuuCheckIn = async () => {
     try {
-        const cookies = process.env.IKUUU_COOKIES?.split('&&') ?? [];
+        const cookies = process.env.COOKIES?.split('&&') ?? [];
 
         const infos = await Promise.all(cookies.map(async cookie => await checkInAndGetStatus(cookie)));
         console.log(infos);
