@@ -25,4 +25,4 @@ jobs:
         run: node checkin.js
         env:
           PUSHPLUS: ${{ secrets.PUSHPLUS }}
-          COOKIES: ${{ secrets.IKUUU_COOKIES }}
+          COOKIES: ${{ secrets.COOKIES }}
