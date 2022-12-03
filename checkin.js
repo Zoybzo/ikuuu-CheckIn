@@ -3,7 +3,7 @@ const axios = require('axios');
 const checkIn = async (cookie) => {
     return axios({
         method: 'post',
-        url: 'https://ikuuu.co/user/checkin',
+        url: 'https://ikuuu.dev/user/checkin',
         headers: {
             'Cookie': cookie
         }
